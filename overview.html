@@ -1,0 +1,7 @@
+<div class="sidebar">
+  <div ng-class-odd="'odd'" ng-class-even="'even'" ng-repeat="result in results" ng-click="openInfoWindow(result)">
+    {{result.name}}
+    {{result.main.temp}}°
+    <img ng-src="http://openweathermap.org/img/w/{{result.weather[0].icon}}.png">
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="sidebar">
+     <h1>Forecast Page</h1>
+     <table style="width: 100%">
+          <tr ng-class-odd="'odd'" ng-class-even="'even'" ng-repeat="aForecast in forecastList">
+               <td>{{aForecast.dt * 1000 | date: 'MM-dd hh:mm'}}</td>
+               <td>{{aForecast.main.temp}}°</td>
+               <td><img ng-src="http://openweathermap.org/img/w/{{aForecast.weather[0].icon}}.png"></td>
+          </tr>
+     </table>
+</div>
